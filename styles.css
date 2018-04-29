@@ -2,12 +2,6 @@
   position: relative;
 
 }
-.mdl-layout__content {
-margin: 0px auto;
-
-}
-
-
 
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
@@ -65,4 +59,3 @@ footer {
     width: 100%;
     z-index: 999;
 }
-
