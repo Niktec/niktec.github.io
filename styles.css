@@ -2,6 +2,12 @@
   position: relative;
 
 }
+.mdl-layout__content {
+margin: 0px auto;
+
+}
+
+
 
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
@@ -43,6 +49,7 @@ img.article-image {
   padding: 10px 0 0;
 }
 
+
 footer {
     /* just for demo */
     background-color: #F8F8F8;
@@ -50,11 +57,12 @@ footer {
     text-align:center;
     padding:10px;
    /* just for demo */
-
+    clear: both;
     position: fixed;
     left: 0;
     bottom: 0;
     height: 20px;
     width: 100%;
+    z-index: 999;
 }
 
