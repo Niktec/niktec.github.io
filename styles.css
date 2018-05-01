@@ -16,6 +16,11 @@
     width: 100%;
   margin: auto;
 }
+
+.mdl-layout__header {
+ background-color: #F8F8F8;
+
+}
 footer {
     /* just for demo */
     background-color: #F8F8F8;
