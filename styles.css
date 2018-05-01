@@ -1,28 +1,21 @@
 .portfolio-header {
   position: relative;
-
 }
-
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-
-
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
 }
-
 .mdl-card__actions mdl-card--border {
   height: 20px;
     width: 100%;
   margin: auto;
 }
-
 footer {
     /* just for demo */
     background-color: #F8F8F8;
