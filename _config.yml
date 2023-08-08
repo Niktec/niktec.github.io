@@ -31,7 +31,7 @@ features                                  :
 
   - title                                 : Test
     description                           : Test several DNS server
-    fontawesome_icon_name                 : fa-gauge
+    fontawesome_icon_name                 : fa-solid fa-rotate
     
   - title                                 : Custom
     description                           : Add custom servers
