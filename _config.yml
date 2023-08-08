@@ -31,19 +31,19 @@ features                                  :
 
   - title                                 : Test
     description                           : Test several DNS server
-    fontawesome_icon_name                 : rotate
+    fontawesome_icon_name                 : arrow-alt-circle-down
     
   - title                                 : Custom
     description                           : Add custom servers
-    fontawesome_icon_name                 : mobile
+    fontawesome_icon_name                 : magic
 
   - title                                 : Fast
     description                           : Test only takes a few seconds
-    fontawesome_icon_name                 : play-circle
+    fontawesome_icon_name                 : star
 
   - title                                 : Darkmode
     description                           : The app has a dark and light mode
-    fontawesome_icon_name                 : sync
+    fontawesome_icon_name                 : adjust
 
 
   - title                                 : # New Feature Title
