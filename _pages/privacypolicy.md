@@ -24,6 +24,15 @@ The app does use third-party services that may collect information used to ident
 
 Link to the privacy policy of third-party service providers used by the app
 
+ </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services
+ </a></li><li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob
+ </a></li><li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase
+ </a></li><li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics				  
+ </a></li><li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Revenuecat
+ </a></li><li><a href="https://www.measurementlab.net/privacy/" target="_blank" rel="noopener noreferrer">Measurement Lab 	 
+ </a></li><li><a href="https://www.facebook.com/legal/terms/plain_text_terms" target="_blank" rel="noopener noreferrer">Facebook
+				  
+				  
 Google Play Services
 AdMob
 Google Analytics for Firebase
