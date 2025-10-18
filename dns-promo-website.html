@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Speed Test - Find the Fastest DNS Server</title>
+    <meta name="description" content="Test and compare DNS server speeds on Android. Find the fastest DNS provider for optimal internet performance.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .badge {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .badge img {
+            height: 60px;
+            transition: transform 0.3s;
+        }
+
+        .badge img:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            background: #f8f9fa;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #4A90E2;
+        }
+
+        .screenshots {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .screenshots h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .screenshot-grid {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .screenshot-item {
+            flex: 0 0 auto;
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .screenshot-item img:hover {
+            transform: scale(1.02);
+        }
+
+        .screenshot-item p {
+            margin-top: 15px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .tech-stack {
+            padding: 60px 20px;
+        }
+
+        .tech-stack h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .tech-category {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #e9ecef;
+        }
+
+        .tech-category h3 {
+            color: #4A90E2;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .tech-category ul {
+            list-style: none;
+        }
+
+        .tech-category li {
+            padding: 8px 0;
+            color: #666;
+        }
+
+        .tech-category li:before {
+            content: "✓ ";
+            color: #4A90E2;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .github-btn {
+            display: inline-block;
+            background: white;
+            color: #4A90E2;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .github-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #357ABD;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .screenshot-item img {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>DNS Speed Test</h1>
+        <p>Find the fastest DNS servers for your network</p>
+        <p style="font-size: 0.9em; opacity: 0.8;">Optimize your internet browsing experience with real-time DNS performance testing</p>
+        <a href="https://play.google.com/store/apps/details?id=com.catinthebox.dnsspeedtest" class="badge">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast Tests</h3>
+                <p>Test multiple DNS servers simultaneously and get results in seconds. Compare popular providers like Cloudflare, Google, Quad9, and more.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Visual Analytics</h3>
+                <p>Beautiful real-time charts showing response times and performance trends for each DNS server tested.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <h3>Modern Design</h3>
+                <p>Clean Material Design 3 interface with full dark mode support. Built with Jetpack Compose for smooth animations.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚙️</div>
+                <h3>Custom Servers</h3>
+                <p>Add your own DNS servers with support for UDP, DNS over HTTPS (DOH), DNS over TLS (DOT), and PING protocols.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Simple Interface</h3>
+                <p>One-tap testing with automatic sorting by speed. No complicated setup required.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Detailed Information</h3>
+                <p>View comprehensive server details including primary/secondary DNS, protocol types, and historical performance data.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="screenshots">
+        <h2>Screenshots</h2>
+        <div class="screenshot-grid">
+            <div class="screenshot-item">
+                <img src="screenshots/simple_ui.png" alt="Simple UI">
+                <p>Simple One-Tap Testing</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/compare_servers.png" alt="Compare Servers">
+                <p>Compare DNS Servers</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/server_details.png" alt="Server Details">
+                <p>Detailed Analytics</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/add_custom.png" alt="Add Custom Server">
+                <p>Add Custom Servers</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/light_mode.png" alt="Light Mode">
+                <p>Light Mode</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshots/dark_mode.png" alt="Dark Mode">
+                <p>Dark Mode</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Technical Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Core Technologies</h3>
+                    <ul>
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Material Design 3</li>
+                        <li>MVVM Architecture</li>
+                        <li>Room Database</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Firebase Integration</h3>
+                    <ul>
+                        <li>Analytics</li>
+                        <li>Crashlytics</li>
+                        <li>Performance Monitoring</li>
+                        <li>Remote Config</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DNS Speed Test by Cat in the Box</p>
+           <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
+            Package: com.catinthebox.dnsspeedtest • Version 5.0.0
+        </p>
+    </footer>
+</body>
+</html>
