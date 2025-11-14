@@ -1,3 +1,3 @@
 google.com, pub-8781408756149983, DIRECT, f08c47fec0942fa0
 facebook.com, 992131861182990, RESELLER, c3e20eee3f780d68
-vungle.com, 53c9a946adeed4cbd2w5555a, DIRECT, c107d686becd2d77
+vungle.com, 61dc978beabd16001728af0a, DIRECT, c107d686becd2d77
