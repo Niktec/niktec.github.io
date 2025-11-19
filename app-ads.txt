@@ -5,6 +5,8 @@ vungle.com,61dc978beabd16001728af0a,DIRECT,c107d686becd2d77
 smartadserver.com, 4194-OB, RESELLER,060d053dcf45cbf3
 smartadserver.com, 4194, RESELLER, 060d053dcf45cbf3
 
+adingo.jp, 33379, RESELLER
+
 inmobi.com, 8f2ecba325954593a0a1a20f1b994082, DIRECT, 83e75a7ae333ca9d
 rubiconproject.com, 11726, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 12266, RESELLER, 0bfd66d529a55807
