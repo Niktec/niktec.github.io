@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Niktec</title>
+    <meta name="description" content="Support contact for Niktec apps.">
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('../fonts/Inter-Variable.woff2') format('woff2');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blue: #4d7cfa;
+            --green: #2fbf71;
+            --page-bg: #05080a;
+            --surface: #1b2529;
+            --border: rgba(255, 255, 255, 0.07);
+        }
+
+        html {
+            color-scheme: dark;
+            background: var(--page-bg);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #e2e8f0;
+            background: var(--page-bg);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            max-width: 480px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 48px 36px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+
+        p.lead {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 28px;
+        }
+
+        .email-link {
+            display: inline-block;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--blue);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .email-link:hover {
+            color: var(--green);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Support</h1>
+        <p class="lead">For questions, feedback, or issues with any Niktec app, please contact us:</p>
+        <a class="email-link" href="mailto:niktec.apps@gmail.com">niktec.apps@gmail.com</a>
+    </div>
+</body>
+</html>
